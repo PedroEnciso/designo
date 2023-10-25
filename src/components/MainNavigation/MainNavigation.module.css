@@ -1,6 +1,14 @@
 .wrapper {
-  padding: 2.187rem 1.75rem;
+  padding: 35px 24px;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 64px 39px;
+    max-width: 1111px;
+    margin: 0 auto;
+  }
 }
 
 .nav {
