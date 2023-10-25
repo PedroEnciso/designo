@@ -60,13 +60,12 @@
 
 .menu li {
   cursor: pointer;
-  transition: color 0.2s;
 }
 
 .menu li:hover {
-  color: rgb(var(--peach));
+  text-decoration: underline;
 }
 
 .active {
-  color: rgb(var(--peach));
+  text-decoration: underline;
 }
