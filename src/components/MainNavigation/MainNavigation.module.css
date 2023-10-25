@@ -1,0 +1,64 @@
+.wrapper {
+  padding: 2.187rem 1.75rem;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    align-items: end;
+  }
+}
+
+.logo {
+  height: 27px;
+  width: 202px;
+  background-image: url("../../assets/shared/desktop/logo-dark.png");
+  background-size: 202px 27px;
+}
+
+.nav button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .nav button {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+
+  font-size: 0.875rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(var(--black));
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 42px;
+  }
+}
+
+.menu li {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.menu li:hover {
+  color: rgb(var(--peach));
+}
+
+.active {
+  color: rgb(var(--peach));
+}
