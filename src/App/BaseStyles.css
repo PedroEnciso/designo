@@ -50,6 +50,7 @@ body {
 }
 
 .button {
+  width: fit-content;
   font-size: 15px;
   font-weight: 500;
   line-height: 26px;
