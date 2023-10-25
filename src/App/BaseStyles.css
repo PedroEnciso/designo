@@ -1,0 +1,76 @@
+:root {
+  /* Primary colors*/
+  --peach: 231 129 107;
+  --black: 29 28 30;
+  --white: 255 255 255;
+
+  /* Primary colors*/
+  --lightPeach: 255 173 155;
+  --darkGray: 51 49 54;
+  --lightGray: 241 243 245;
+
+  /* Font sizes*/
+  --heading1: 48px;
+  --heading2: 40px;
+  --heading3: 20px;
+  --body: 16px;
+}
+
+body {
+  font-size: var(--body);
+  color: rgb(var(--darkGrey));
+  background-color: rgb(var(--white));
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Jost", sans-serif;
+}
+
+.heading {
+  font-weight: 500;
+}
+
+.heading1 {
+  font-size: var(--heading1);
+  color: rgb(var(--black));
+  line-height: 1;
+}
+
+.heading2 {
+  font-size: var(--heading2);
+  color: rgb(var(--black));
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+
+.heading3 {
+  font-size: var(--heading3);
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 1.125rem 1.56rem;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+  background-color: rgb(var(--lightPeach));
+  color: rgb(var(--white));
+}
+
+.buttonOnDark {
+  background-color: rgb(var(--white));
+}
+
+.buttonOnLight {
+  background-color: rgb(var(--peach));
+  color: rgb(var(--white));
+}
