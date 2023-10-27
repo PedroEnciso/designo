@@ -44,6 +44,7 @@
 .menu {
   display: none;
 
+  margin-bottom: 3px;
   font-size: 0.875rem;
   line-height: 1;
   letter-spacing: 2px;
