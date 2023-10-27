@@ -6,13 +6,15 @@ import phoneImg from "src/assets/home/desktop/image-hero-phone.png";
 function HeroSection(props) {
   return (
     <section className={classes.hero}>
-      <h1>Award-winning custom designs and digital branding solutions</h1>
-      <p>
-        With over 10 years in the industry, we are experienced in creating fully
-        responsive websites, app design, and engaging brand experiences. Find
-        out more about our services.
-      </p>
-      <button className="button buttonOnDark">learn more</button>
+      <div className={classes.heroDetails}>
+        <h1>Award-winning custom designs and digital branding solutions</h1>
+        <p>
+          With over 10 years in the industry, we are experienced in creating
+          fully responsive websites, app design, and engaging brand experiences.
+          Find out more about our services.
+        </p>
+        <button className="button buttonOnDark">learn more</button>
+      </div>
       <img src={phoneImg} alt="" />
       <div className={classes.svg}>
         <svg width="640" height="639" xmlns="http://www.w3.org/2000/svg">
