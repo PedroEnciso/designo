@@ -1,0 +1,104 @@
+.wrapper {
+  padding: 0px 24px;
+}
+
+.wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .wrapper ul li:first-child {
+    grid-row: 1/3;
+  }
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    min-height: 308px;
+  }
+}
+
+.card a div {
+  height: 100%;
+  padding: 90px 10px;
+  background-color: rgb(var(--black) / 0.5);
+  transition: background-color 0.2s;
+  color: rgb(var(--white));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .card a div {
+    padding: 53px 10px;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card a div {
+    padding: 0px 10px;
+  }
+}
+
+.card:hover a div {
+  background-color: rgb(var(--lightPeach) / 0.8);
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.0875rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.125rem;
+  }
+}
+
+.view {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: gap 0.2s;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+    line-height: auto;
+    letter-spacing: 0.3125rem;
+  }
+}
+
+.card:hover a div .view {
+  gap: 24px;
+}
