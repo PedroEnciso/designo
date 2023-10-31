@@ -1,0 +1,87 @@
+.wrapper {
+  padding: 0px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 0px;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .quality {
+    flex-direction: row;
+    text-align: start;
+    gap: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .quality {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quality div p {
+    min-width: 350px;
+  }
+}
+
+.qualityTitle {
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .qualityTitle {
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .qualityTitle {
+    margin-bottom: 32px;
+  }
+}
+
+.svgContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.backgroundSvg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.rotate270 {
+  transform: rotate(270deg);
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
