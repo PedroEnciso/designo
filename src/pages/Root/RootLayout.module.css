@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 1111px;
-  margin: 0 auto;
+  margin: 0 auto 120px;
   display: flex;
   flex-direction: column;
   gap: 120px;
@@ -8,6 +8,15 @@
 
 @media screen and (min-width: 768px) {
   .wrapper {
+    margin-bottom: 105px;
     padding: 0px 39px;
+    gap: 105px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    margin-bottom: 160px;
+    gap: 160px;
   }
 }
