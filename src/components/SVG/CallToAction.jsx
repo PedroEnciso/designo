@@ -1,6 +1,6 @@
 import React from "react";
 
-function CallToAction(props) {
+function CallToActionSvg(props) {
   return (
     <svg width="876" height="584" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -47,4 +47,4 @@ function CallToAction(props) {
   );
 }
 
-export default CallToAction;
+export default CallToActionSvg;
